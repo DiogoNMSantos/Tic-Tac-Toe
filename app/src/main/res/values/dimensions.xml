@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="GameBoard_textSize">100dp</dimen>
+    <dimen name="TikTakToe_textSize">50dp</dimen>
+    <dimen name="Status_textSize">16dp</dimen>
+    <dimen name="Lines_MarginHorizontal">10dp</dimen>
+    <dimen name="Lines_MarginLeft">10dp</dimen>
+    <dimen name="Lines_MarginRight">10dp</dimen>
+
+</resources>

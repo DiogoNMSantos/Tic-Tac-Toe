@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="TikTakToe"
+        android:textSize="@dimen/TikTakToe_textSize"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/Cell_0_2"
+                android:tag="0_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface = "monospace"
+                android:layout_marginRight="@dimen/Lines_MarginLeft"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:text=" "
+                android:textSize="@dimen/GameBoard_textSize"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="135dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginHorizontal="@dimen/Lines_MarginHorizontal"/>
+
+            <TextView
+                android:id="@+id/Cell_1_2"
+                android:tag="1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface = "monospace"
+                android:layout_marginHorizontal="15dp"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:text=" "
+                android:textSize="@dimen/GameBoard_textSize"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="135dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginHorizontal="10dp"/>
+
+            <TextView
+                android:id="@+id/Cell_2_2"
+                android:tag="2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface = "monospace"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_marginLeft="@dimen/Lines_MarginRight"
+                android:text=" "
+                android:textSize="@dimen/GameBoard_textSize"/>
+
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginHorizontal="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface = "monospace"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/Cell_0_1"
+                android:tag="0_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface = "monospace"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_marginRight="@dimen/Lines_MarginLeft"
+                android:text=" "
+                android:textSize="@dimen/GameBoard_textSize"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="135dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginHorizontal="@dimen/Lines_MarginHorizontal"/>
+
+            <TextView
+                android:id="@+id/Cell_1_1"
+                android:tag="1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:typeface = "monospace"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:text=" "
+                android:textSize="@dimen/GameBoard_textSize"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="135dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginHorizontal="10dp"/>
+
+            <TextView
+                android:id="@+id/Cell_2_1"
+                android:tag="2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface = "monospace"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_marginLeft="@dimen/Lines_MarginRight"
+                android:text=" "
+                android:textSize="@dimen/GameBoard_textSize"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginHorizontal="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/Cell_0_0"
+                android:tag="0_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface = "monospace"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_marginRight="@dimen/Lines_MarginLeft"
+                android:text=" "
+                android:textSize="@dimen/GameBoard_textSize"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="135dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginHorizontal="@dimen/Lines_MarginHorizontal"/>
+
+            <TextView
+                android:id="@+id/Cell_1_0"
+                android:tag="1_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:typeface = "monospace"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:text=" "
+                android:textSize="@dimen/GameBoard_textSize"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="135dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginHorizontal="10dp"/>
+
+            <TextView
+                android:id="@+id/Cell_2_0"
+                android:tag="2_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface = "monospace"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:text=" "
+                android:textSize="@dimen/GameBoard_textSize"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textSize="@dimen/Status_textSize"/>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:text="cannot play on a played position"
+            android:textSize="@dimen/Status_textSize"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Reset"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/background_light"
+        android:enabled="false"
+        android:onClick="onReset"
+        android:clickable="true"/>
+
+</LinearLayout>
